@@ -1,0 +1,6 @@
+*.vvp
+*.out
+*.vcd
+*.fst
+software/final_memory_dump.hex
+.DS_Store
