@@ -14,7 +14,7 @@ A 32-bit RISC-V (RV32I) processor designed from scratch in Verilog. The core imp
 
 ## Verification Strategy
 
-The processor's correctness was verified by cross compiling standard C algorithms (like Linked-List Traversal, Bellman-Ford and Matrix Multiplication) into RISC-V machine code using the riscv32-unknown-elf-gcc toolchain.
+The processor's correctness was verified by cross compiling standard C algorithms (like Linked-List Traversal, Quicksort, Bellman-Ford and Matrix Multiplication) into RISC-V machine code using the riscv-none-elf-gcc toolchain.
 
 The testbench (core_tb.v) executes the machine code, tracks hardware performance counters (cycles, stalls, flushes), and dumps the final state of the SRAM into a final_memory_dump.hex file. The output inside the .signature memory region is then validated against expected algorithmic results.
 
